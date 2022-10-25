@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+  background: rgb(214,40,40);
+  background: linear-gradient(146deg, rgba(214,40,40,1) 0%, rgba(247,127,0,1) 43%, rgba(252,191,73,1) 70%, rgba(234,226,183,1) 94%);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    padding-top: 5px;
+    border-radius: 10px;
+    border: solid white 3px;
+    box-shadow: 0 0 20px rgba(63,22,81,1)
+}
+
+
+
+
+#display {
+    margin: 0 10px;
+    height: 120px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 40px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    border-radius: 13px;
+    color: white;
+  }
+
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 40px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+
+button#3, button#6, button#9 {
+    width: 60px;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+  .calculator {
+    background-color: #003049;
+  }
+
+  .calculator p {
+    color: white;
+    text-align: center;
+}
+
+  .calculator #display {
+    color: white;
+  }
+
+  .calculator button#clear {
+    border-radius: 15px;
+    background: #d62828;
+    color: white;
+  }
+
+  .calculator button.btn-number {
+    border-radius: 15px;
+    background: #fcbf49;
+    color: black;
+  }
+
+  .calculator button.btn-operator {
+    border-radius: 15px;
+    background: #f77f00 ;
+    color: black;
+  }
+  
+  .calculator button.btn-equal {
+    border-radius: 15px;
+    background-color: #d62828;
+    color: #ffffff;
+  }
+  
+  
